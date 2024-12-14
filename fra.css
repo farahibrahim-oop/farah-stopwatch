@@ -1,0 +1,102 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #e1ccf7;
+    text-shadow: 0 4px 8px rgba(124, 111, 118, 0.5);
+  }
+  
+  .time {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background: #f2b0d4;
+    color: #edd8e2;
+    padding: 15px 20px;
+    border-radius: 30px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.4);
+    animation: glow 2s infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px #cfa8f2, 0 0 40px #daafef;
+    }
+    50% {
+      box-shadow: 0 0 20px #b3cde0, 0 0 60px #b3cde0; 
+    }
+    100% {
+      box-shadow: 0 0 10px #eeb9f0, 0 0 40px #e186d0;
+    }
+  }
+  
+  button {
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  button:active {
+    transform: scale(1.05);
+  }
+  
+  button#start {
+    background: #ff63ae;
+    color: white;
+    box-shadow: 0 0 10px #ff63ae;
+  }
+  
+  button#start:hover {
+    background: #ee42af;
+  }
+  
+  button#stop {
+    background: #836aff;
+    color: white;
+    box-shadow: 0 0 10px #836aff;
+  }
+  
+  button#stop:hover {
+    background: #6b5eff;
+  }
+  
+  button#reset {
+    background: #fac4f6;
+    color: white;
+    box-shadow: 0 0 10px #fac4f6;
+  }
+  
+  button#reset:hover {
+    background: #feb1ea;
+  }
+  
